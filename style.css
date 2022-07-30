@@ -1,0 +1,52 @@
+body{
+    background-image:  url("assets/starwar.jpg");
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position-x: center; 
+
+}
+h1{
+    font-size: 150px;
+    color: rgba(158, 13, 13, 0.952);
+    font-family:'Courier New', Courier, monospace;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    text-align: center;
+    
+}
+
+ul{
+    list-style: none;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 12px; 
+}
+a{
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(15, 26, 122);
+    color: white;
+}
+a:hover{
+    background-color:  rgb(165, 42, 42);
+}
+@media  (max-width: 768px){
+    h1{
+        font-size: 100px;
+    }
+    ul{
+        font-size: 24px;
+    }
+}
+@media  (max-width: 576px){
+    h1{
+        font-size: 80px;
+    }
+    ul{
+        font-size: 18px;
+    }
+}
