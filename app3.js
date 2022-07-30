@@ -29,10 +29,6 @@ const mappedMovies =  (films) =>{
           })
     })
 } 
-
-
-
-
 const getFilmMakers = (filmMakers) => {
       const filmMakerslist = [];
       filmMakers.forEach(filmMaker => {
@@ -44,13 +40,15 @@ const getFilmMakers = (filmMakers) => {
 const paintMovies = (movie) =>{
     const mainContainer = document.querySelector("#mainContainer");
     mainContainer.innerHTML+= `
-       <div>
-       <img src=${movie.poster} alt = ${movie.nombre} referrerpolicy="no-referrer">
-       <h2>Titulo: ${movie.nombre}</h2>  
-       <p><b> Año: ${movie.año}</b></p>
-       <p> <b>Sinopsis:</b> ${movie.sinopsis}</p>
-       <p> <b>Creado por:</b></p> 
+       <div class="tarjeta">       
+       <img src=${movie.poster} alt = ${movie.nombre} referrerpolicy="no-referrer">      
+       <div class ="info">
+       <h2> ${movie.nombre}</h2>  
+       <p> Año:${movie.año}</p>
+       <p> Sinopsis:</P>
+       <p> ${movie.sinopsis}</p>       
        <p>${movie.cineastas}</p>
+       </div>
        </div>
     `
 

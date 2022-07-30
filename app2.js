@@ -29,7 +29,7 @@ const getCharacters = async () =>{
 const mappedCharacters = (characters) =>{
       characters.data.characters.map((character)=>{
       return printCharacters({
-          nombre: character.name,
+         
           origen: character.origin,
           roll: character.role,
           id: character.name,
@@ -39,19 +39,19 @@ const mappedCharacters = (characters) =>{
       })
 }
 
-
-
 const printCharacters = (character) =>{
     const mainContainer = document.querySelector("#mainContainer");
     mainContainer.innerHTML  += `
-      <div> 
+      <div class ="tarjeta "> 
         <img src =${character.imagen} alt=${character.nombre} referrerpolicy="no-referrer"/>
-        <h2> Nombre: ${character.nombre} </h2>
-        <p> Origen: ${character.origen}</p>
-        <p> Roll: ${character.roll} </p>
+        <h3><b>${character.id} </b></h3>        
+        <p> <b> Origen:</b> ${character.origen}</p>
+        <p> <b> Roll:</b> ${character.roll} </p>
         
       </div>
     `
 }
+
+
 
 

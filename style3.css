@@ -1,0 +1,122 @@
+body{
+    background-image: url("assets/Prueba.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+ul{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 40px;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    margin: 12px;
+    padding: 10px;
+    background-color:#470249  ;
+    border-radius: 10px;
+    color: rgb(250, 248, 248);
+    font-size: 30px;
+ }
+ a:hover{
+     background-color: rgba(255, 255, 0, 0.589);
+     color:#470249;
+ }
+ .mainContainer{
+     display: flex;
+     flex-direction: column;
+ }
+
+.tarjeta{    
+    display: flex;
+    border: 1px solid rgb(243, 241, 216);
+    box-shadow: 40px 40px 40px;
+    margin-bottom: 40px; 
+    background-color: rgba(38, 29, 104, 0.404);
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 400px;
+}
+img{
+    width: 25%;   
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 75%;   
+}
+
+h2{
+    font-size: 38px;
+    color: rgb(255, 215, 0,3);
+    text-align: center;
+    margin-bottom: 20px;
+}
+p{
+    color: rgb(243, 237, 240);
+    font-size: 15px;
+    padding-bottom: 0px;
+}
+
+
+@media(max-width: 768px){
+    a{
+        font-size: 24px;
+    }
+    a:hover{
+        background-color: rgba(255, 255, 0, 0.589);
+        color:#470249;
+    }
+    .tarjeta{    
+        display: flex;
+        border: 1px solid rgb(243, 241, 216);
+        box-shadow: 40px 40px 40px;
+        margin-bottom: 40px; 
+        background-color: rgba(38, 29, 104, 0.404);
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        height: 320px;
+    }
+    h2{
+        font-size: 24px;
+        color: rgb(255, 215, 0,3);
+        text-align: center; 
+    }    
+    p{
+        font-size: 12px;
+    }
+
+
+}
+@media(max-width: 576px){
+    a{
+        font-size: 18px;
+    }
+    a:hover{
+        background-color: rgba(255, 255, 0, 0.589);
+        color:#470249;
+    }
+    .tarjeta{    
+        display: flex;
+        border: 1px solid rgb(243, 241, 216);
+        box-shadow: 40px 40px 40px;
+        margin-bottom: 40px; 
+        background-color: rgba(38, 29, 104, 0.404);
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        height: 280px;
+    }
+    h2{
+        font-size: 18px;
+        color: rgb(255, 215, 0,3);
+        text-align: center; 
+    }    
+    p{
+        font-size: 10px;
+    }
+}

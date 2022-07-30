@@ -1,0 +1,103 @@
+body{
+    background-image: url("assets/character.jpg");
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-position-x: center; 
+}
+ul{
+    display: flex;
+    justify-content:space-around;
+    margin: 40px;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    margin: 12px;
+    padding: 10px;
+    background-color:#1e4929  ;
+    border-radius: 10px;
+    color: rgb(250, 248, 248);
+    font-size: 30px;
+ }
+ a:hover{
+     background-color: grey;
+     color: rgb(61, 5, 5);
+ }
+ 
+#mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+
+}
+img{
+    width:100%;
+    height: 380px;
+}
+.tarjeta{  
+    width: 380px;
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.747); 
+    border:  3px solid rgb(41, 30, 30);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 20px 15px 30px;
+}
+h3{
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+    
+    color: rgb(61, 5, 5);
+}
+p{
+    font-size: 24px;
+    color: white;
+}
+
+
+@media(max-width: 768px){
+
+    a{
+        font-size: 20px;
+    }
+
+    .tarjeta{
+        width: 300px;
+        height: auto;
+    }
+    .tarjeta img{
+        height: 300px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    p{
+        font-size: 18px;
+    }
+    
+      
+}
+@media(max-width: 576px){
+    a{
+        font-size: 16px;
+    }
+
+    .tarjeta{
+        width: 200px;
+        height: auto;
+    }
+    .tarjeta img{
+        height: 200px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    p{
+        font-size: 14px;
+    }
+    
+      
+}
